@@ -1,0 +1,13 @@
+.listaPadre {
+    width: 30%;
+}
+
+hr {
+    margin: 2px 0;
+}
+.check {
+    font-size: 12px;    
+}
+.check:hover {
+    background: #0ca007;
+}

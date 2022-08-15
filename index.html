@@ -17,9 +17,95 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Lista de tareas</title>
   </head>
-  <body>
+  <body class="bg-primary">
     <main>
-        
+      <section class="d-flex justify-content-center">
+        <article
+          class="d-inline-block bg-info p-3 my-2 rounded rounded-5 border border-5 border-light"
+        >
+          <h1 class="display-3 text-light fw-semibold fst-italic">
+            Lista de tareas
+          </h1>
+        </article>
+      </section>
+      <section class="mx-auto w-50">
+        <form class="text-center d-flex justify-content-center">
+          <div class="w-75">
+            <label class="form-label text-light fs-4" for="tarea"
+              >Ingrese una tarea</label
+            >
+            <input class="form-control" type="text" id="tarea" />
+          </div>
+          <button type="button" class="btn btn-info text-light h-25 px-4 align-self-end" onclick="agregarTarea()">
+            Subir
+          </button>
+        </form>
+      </section>
+      <section class="d-flex justify-content-around mt-4 text-dark fs-4" id="padre">
+        <ul class="bg-light py-2 px-4 rounded list-unstyled rounded-5 listaPadre border border-3 border-info" >
+          <li class="itemLista"><button class="btn btn-light py-0 px-1 me-2 border border-2 check" id="0" onclick="tareaFinalizada()">&#10003;</button></li>
+          <hr>
+          <li class="itemLista"><button class="btn btn-light py-0 px-1 me-2 border border-2 check" id="1" onclick="tareaFinalizada()">&#10003;</button></li>
+          <hr>
+          <li class="itemLista"><button class="btn btn-light py-0 px-1 me-2 border border-2 check" id="2" onclick="tareaFinalizada()">&#10003;</button></li>
+          <hr>
+          <li class="itemLista"><button class="btn btn-light py-0 px-1 me-2 border border-2 check" id="3" onclick="tareaFinalizada()">&#10003;</button></li>
+          <hr>
+          <li class="itemLista"><button class="btn btn-light py-0 px-1 me-2 border border-2 check" id="4" onclick="tareaFinalizada()">&#10003;</button></li>
+          <hr>
+          <li class="itemLista"><button class="btn btn-light py-0 px-1 me-2 border border-2 check" id="5" onclick="tareaFinalizada()">&#10003;</button></li>
+          <hr>
+          <li class="itemLista"><button class="btn btn-light py-0 px-1 me-2 border border-2 check" id="6" onclick="tareaFinalizada()">&#10003;</button></li>
+          <hr>
+          <li class="itemLista"><button class="btn btn-light py-0 px-1 me-2 border border-2 check" id="7" onclick="tareaFinalizada()">&#10003;</button></li>
+          <hr>
+          <li class="itemLista"><button class="btn btn-light py-0 px-1 me-2 border border-2 check" id="8" onclick="tareaFinalizada()">&#10003;</button></li>
+          <hr>
+        </ul>
+
+        <ul class="bg-light py-2 px-4 rounded list-unstyled rounded-5 listaPadre border border-3 border-info" >
+          <li class="itemLista"><button class="btn btn-light py-0 px-1 me-2 border border-2 check" id="9" onclick="tareaFinalizada()">&#10003;</button></li>
+          <hr>
+          <li class="itemLista"><button class="btn btn-light py-0 px-1 me-2 border border-2 check" id="10" onclick="tareaFinalizada()">&#10003;</button></li>
+          <hr>
+          <li class="itemLista"><button class="btn btn-light py-0 px-1 me-2 border border-2 check" id="11" onclick="tareaFinalizada()">&#10003;</button></li>
+          <hr>
+          <li class="itemLista"><button class="btn btn-light py-0 px-1 me-2 border border-2 check" id="12" onclick="tareaFinalizada()">&#10003;</button></li>
+          <hr>
+          <li class="itemLista"><button class="btn btn-light py-0 px-1 me-2 border border-2 check" id="13" onclick="tareaFinalizada()">&#10003;</button></li>
+          <hr>
+          <li class="itemLista"><button class="btn btn-light py-0 px-1 me-2 border border-2 check" id="14" onclick="tareaFinalizada()">&#10003;</button></li>
+          <hr>
+          <li class="itemLista"><button class="btn btn-light py-0 px-1 me-2 border border-2 check" id="15" onclick="tareaFinalizada()">&#10003;</button></li>
+          <hr>
+          <li class="itemLista"><button class="btn btn-light py-0 px-1 me-2 border border-2 check" id="16" onclick="tareaFinalizada()">&#10003;</button></li>
+          <hr>
+          <li class="itemLista"><button class="btn btn-light py-0 px-1 me-2 border border-2 check" id="17" onclick="tareaFinalizada()">&#10003;</button></li>
+          <hr>
+        </ul>
+
+        <ul class="bg-light py-2 px-4 rounded list-unstyled rounded-5 listaPadre border border-3 border-info" >
+          <li class="itemLista"><button class="btn btn-light py-0 px-1 me-2 border border-2 check" id="18" onclick="tareaFinalizada()">&#10003;</button></li>
+          <hr>
+          <li class="itemLista"><button class="btn btn-light py-0 px-1 me-2 border border-2 check" id="19" onclick="tareaFinalizada()">&#10003;</button></li>
+          <hr>
+          <li class="itemLista"><button class="btn btn-light py-0 px-1 me-2 border border-2 check" id="20" onclick="tareaFinalizada()">&#10003;</button></li>
+          <hr>
+          <li class="itemLista"><button class="btn btn-light py-0 px-1 me-2 border border-2 check" id="21" onclick="tareaFinalizada()">&#10003;</button></li>
+          <hr>
+          <li class="itemLista"><button class="btn btn-light py-0 px-1 me-2 border border-2 check" id="22" onclick="tareaFinalizada()">&#10003;</button></li>
+          <hr>
+          <li class="itemLista"><button class="btn btn-light py-0 px-1 me-2 border border-2 check" id="23" onclick="tareaFinalizada()">&#10003;</button></li>
+          <hr>
+          <li class="itemLista"><button class="btn btn-light py-0 px-1 me-2 border border-2 check" id="24" onclick="tareaFinalizada()">&#10003;</button></li>
+          <hr>
+          <li class="itemLista"><button class="btn btn-light py-0 px-1 me-2 border border-2 check" id="25" onclick="tareaFinalizada()">&#10003;</button></li>
+          <hr>
+          <li class="itemLista"><button class="btn btn-light py-0 px-1 me-2 border border-2 check" id="26" onclick="tareaFinalizada()">&#10003;</button></li>
+          <hr>
+          
+        </ul>
+      </section>
     </main>
     <!-- JavaScript Bundle with Popper -->
     <script
